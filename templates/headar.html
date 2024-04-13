@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Navbar</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Food Shop</h1>
+            <ul class="nav-links">
+                <li><a href="{% url 'homepage' %}">Home</a></li>
+                <li><a href="{% url 'shoplist' %}">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://web.whatsapp.com/">Contact</a></li>
+                <li><a href="{% url 'becomepart' %}">Become a Partner</a></li>
+
+            </ul>
+            <form class="search-box" action="#" method="GET">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit">Search</i></button>
+            </form>
+        </div>
+    </nav>
+    
+ 

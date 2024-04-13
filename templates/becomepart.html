@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content1 %}
+<div class="bigcont">
+    <div class="space"></div>
+    <div class="from-div">
+<div class="form-content">
+    <h2>Login / Sign Up</h2>
+    <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">Login</button>
+        <button type="submit"><a href="{% url 'signup' %}">Sign Up</a></button>
+    </form>
+</div>
+</div>
+</div>
+{% endblock content1 %}
+

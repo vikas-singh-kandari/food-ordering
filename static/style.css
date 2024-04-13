@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cont {
+     /* Adjust the path as per your project structure */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+}
+ 
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 20px;
+}
+.container h1{
+    margin-right: 400px;
+}
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #ff6600;
+}
+ 
+.bigcont{
+    background-image: url('/static/img/homepic.jpg');
+    filter: brightness(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    
+}
+.heading {
+     
+        color: white; /* Text color white */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text ko chhavi dena */
+        
+} 
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.form-content {
+    width: 500px; /* Increased width */
+    height: 300px; /* Decreased height */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.form-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-content input[type="text"],
+.form-content input[type="password"],
+.form-content input[type="phone"],
+.form-content input[type="City"],
+.form-content input[type="Email"],
+.form-content button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.form-content button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content button:hover {
+    background-color: #ff6600;
+}
+.from-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+}
+.heading h1 {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff; /* White text color for heading */
+}
+.heading h1 span{
+    color: #ff9900;
+}
+.heading p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff; 
+    width: 600px;/* White text color for paragraph */
+}
+
+
+  /* for footetr */
+
+  footer {
+    background-color: #050505;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling links in the footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links in the footer */
+footer a:hover {
+    color: #ffd700; /* Change to desired hover color */
+}
+
+/* Responsive design */
+  
+ /* shop */
+ .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the width and minimum size as needed */
+    gap: 20px; /* Adjust the gap between cards */
+    
+}
+
+.space{
+    height: 50px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f3ead9;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px; /* Ensure the image covers the entire container */
+}
+
+.card-details {
+    padding: 20px;
+}
+
+.card-details h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
