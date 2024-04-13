@@ -12,3 +12,6 @@ def becomepart(request):
 
 def signup(request):
     return render(request, "signup.html")
+
+def addshop(request):
+    return render(request, "addshop.html")

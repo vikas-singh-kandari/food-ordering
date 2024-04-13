@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="addshop">
+<div class="form-containers">
+    <h2>Add Shop</h2>
+    <form  method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="shop_name">Shop Name:</label>
+            <input type="text" id="shop_name" name="shop_name" required>
+        </div>
+        <div class="form-group">
+            <label for="shop_img">Shop Image:</label>
+            <input type="file" id="shop_img" name="shop_img" accept="image/*" required>
+        </div>
+        <div class="form-group">
+            <label for="shop_contact">Contact Number:</label>
+            <input type="text" id="shop_contact" name="shop_contact" required>
+        </div>
+        <div class="form-group">
+            <label for="shop_address">Address:</label>
+            <textarea id="shop_address" name="shop_address" required></textarea>
+        </div>
+        <button type="submit">Add Shop</button>
+    </form>
+</div>
+</div>
+
+{% endblock content1 %}
+
+
+

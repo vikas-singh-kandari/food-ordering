@@ -87,7 +87,7 @@ body {
 }
  
 .bigcont{
-    background-image: url('/static/img/homepic.jpg');
+    /* background-image: url('/static/img/homepage1.jp'); */
     filter: brightness(70%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,3 +259,65 @@ footer a:hover {
 .social-icons a:hover {
     color: #ff9900;
 }
+
+/* from add shop */
+ .addshop{
+    background-image: url('/static/img/homepic.jpg');
+    filter: brightness(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+
+ }
+.form-containers {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-containers h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
