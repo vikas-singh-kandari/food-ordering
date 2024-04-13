@@ -87,8 +87,8 @@ body {
 }
  
 .bigcont{
-    /* background-image: url('/static/img/homepage1.jp'); */
-    filter: brightness(70%);
+    background-image: url('/static/img/homepage1.jpg');
+    /* filter: brightness(70%); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -263,18 +263,19 @@ footer a:hover {
 /* from add shop */
  .addshop{
     background-image: url('/static/img/homepic.jpg');
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    /* display: flex; */
     height: 100vh;
 
  }
 .form-containers {
-    width: 400px;
+    width: 500px;
+    height: 300px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color:transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -304,7 +305,7 @@ textarea {
 }
 
 textarea {
-    height: 100px;
+    height: 50px;
 }
 
 button {
