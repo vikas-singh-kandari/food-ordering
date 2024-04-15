@@ -192,6 +192,7 @@ body {
     bottom: 0;
     width: 100%;
     z-index: 1000;
+    margin-top: 200px;
 }
 
 /* Styling links in the footer */
@@ -212,12 +213,11 @@ footer a:hover {
  .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the width and minimum size as needed */
-    gap: 20px; /* Adjust the gap between cards */
-    
+    gap: 20px; /* Adjust the gap between cards */    
 }
 
 .space{
-    height: 50px;
+    height: 100px;
 }
 .card {
     border: 1px solid #ccc;
@@ -322,3 +322,106 @@ button:hover {
     background-color: #ff6600;
 }
 
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #090808;
+    padding: 18px;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color:#ff9900;
+    color: white;
+  }
+  /* buuton */
+  .custom-button {
+    background-color:#ff9900;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049;
+  }
+ 
+
+  /* Style for the "About" section */
+/* Style for the "About" section */
+#about {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.custom-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-card h2, .custom-card h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.custom-card p {
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.custom-card h2 span {
+    color: #ff6b6b;
+}
+
+.custom-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-card ul li {
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.custom-card ul li strong {
+    color: #333;
+}

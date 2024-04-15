@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stylish Navbar</title>
   <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-hKcywE43EIQJk+riP/Fmi8z5OsEEnLgLUqT3mZvrwSWVRBUyfby3yF7fYHJDSOvO7qyUegH4uLqGzPI8c+Q3zA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body> 
     <nav class="navbar">
@@ -14,14 +16,13 @@
             <ul class="nav-links">
                 <li><a href="{% url 'homepage' %}">Home</a></li>
                 <li><a href="{% url 'shoplist' %}">Shop</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="https://web.whatsapp.com/">Contact</a></li>
                 <li><a href="{% url 'addshop' %}">Become a Partner</a></li>
 
             </ul>
             <form class="search-box" action="#" method="GET">
-                <input type="text" name="search" placeholder="Search...">
-                <button type="submit">Search</i></button>
+                <input type="text" name="search" placeholder="Search Shop...">
+                <button type="submit">Search</button>
             </form>
         </div>
     </nav>

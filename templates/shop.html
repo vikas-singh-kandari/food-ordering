@@ -3,114 +3,23 @@
 {% block content1 %}
 <div class="space"></div>
 <div class="cards">
-     
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+    {% for shop in shops %}
+    <div class="card">
+        <img src="{{shop.shop_img.url}}" alt="Shop Image">
+        <div class="card-details">
+            <h3>{{shop.shop_name}}</h3>
+            <p>Phone: <a href="tel:+123456789">{{shop.shop_contact}}</a></p>
+            <p>{{shop.shop_address}}</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
     </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <img src="{% static '/img/homepic.jpg' %}" alt="Shop Image">
-    <div class="card-details">
-        <h3>Shop Name</h3>
-        <p>Phone: <a href="tel:+123456789">+123456789</a></p>
-        <p>Address: 123 Street, City, Country</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
-</div>
-</div>
-
-
+    {% endfor %}
+</div> 
+ 
 {% endblock content1 %}
 
 
